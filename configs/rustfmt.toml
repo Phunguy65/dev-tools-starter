@@ -1,0 +1,26 @@
+edition = "2024"
+trailing_comma = "Always"
+wrap_comments = true
+where_single_line = false
+max_width = 80
+fn_single_line = false
+control_brace_style = "AlwaysNextLine"
+struct_lit_single_line = false
+space_after_colon = true
+blank_lines_lower_bound = 1
+blank_lines_upper_bound = 1
+brace_style = "SameLineWhere"
+remove_nested_parens = true
+format_code_in_doc_comments = true
+empty_item_single_line = true
+chain_width = 0
+array_width = 0
+fn_call_width =60
+attr_fn_like_width = 70
+match_arm_blocks = true
+match_arm_indent =true
+indent_style = "Block"
+tab_spaces = 4
+hard_tabs = true
+newline_style = "Unix"
+

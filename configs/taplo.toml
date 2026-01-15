@@ -1,0 +1,8 @@
+[formatting]
+trailing_newline = true
+align_comments = true
+column_width = 80
+allowed_blank_lines = 1
+align_entries = true
+indent_string = "    "
+

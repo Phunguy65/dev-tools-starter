@@ -1,0 +1,9 @@
+{
+    "$schema": "https://raw.githubusercontent.com/sql-formatter-org/sql-formatter/refs/heads/master/schema.json",
+    "tabWidth": 4,
+    "useTabs": false,
+    "language": "sql",
+    "keywordCase": "upper",
+    "newlineBeforeSemicolon": true,
+    "identifierCase": "preserve"
+}
