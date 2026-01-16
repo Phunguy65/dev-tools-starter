@@ -1,0 +1,14 @@
+[lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "S", "TCH", "PTH", "RUF", "N"]
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"tests/**" = ["S101"]
+
+[format]
+indent-style = "space"
+indent-width = 4
+line-ending = "lf"
+line-length = 80
+quote-style = "single"
+skip-magic-trailing-comma = false
