@@ -55,7 +55,10 @@
     "json": {
         "formatter": {
             "bracketSpacing": true,
-            "trailingCommas": "all"
+            "trailingCommas": "none"
+        },
+        "parser":{
+            "allowTrailingCommas": false
         }
     },
     "css": {

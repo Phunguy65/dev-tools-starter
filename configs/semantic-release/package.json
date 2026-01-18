@@ -6,14 +6,23 @@
     "keywords": [],
     "author": {
         "email": "ngocphunguyen@gmail.com",
-        "name": "Nguyễn Ngọc Phú",
+        "name": "Nguyễn Ngọc Phú"
     },
     "files": [
-        ".releaserc.json",
+        ".releaserc.json"
     ],
     "exports": {
-        ".": "./.releaserc.json",
+        ".": "./.releaserc.json"
+    },
+    "devDependencies": {
+        "semantic-release": "^25.0.2",
+        "@semantic-release/exec": "^7.1.0",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^12.0.2",
+        "@semantic-release/npm": "^13.1.3",
+        "@semantic-release/commit-analyzer": "^10.0.2",
+        "@semantic-release/release-notes-generator": "^10.0.2"
     },
     "license": "MIT",
-    "packageManager": "pnpm@10.28.0",
+    "packageManager": "pnpm@10.28.0"
 }
