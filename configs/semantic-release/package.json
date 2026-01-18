@@ -1,0 +1,19 @@
+{
+    "name": "@phunguy65/semantic-release-config",
+    "version": "1.0.0",
+    "description": "Sharable semantic-release configuration",
+    "scripts": {},
+    "keywords": [],
+    "author": {
+        "email": "ngocphunguyen@gmail.com",
+        "name": "Nguyễn Ngọc Phú",
+    },
+    "files": [
+        ".releaserc.json",
+    ],
+    "exports": {
+        ".": "./.releaserc.json",
+    },
+    "license": "MIT",
+    "packageManager": "pnpm@10.28.0",
+}
