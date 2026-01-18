@@ -1,0 +1,8 @@
+rules:
+    indentation:
+        spaces: 4
+    quoted-strings: true
+yaml-files:
+    - "*.yaml"
+    - "*.yml"
+    - ".yamllint"
