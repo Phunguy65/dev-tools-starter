@@ -3,6 +3,7 @@
 ## Universal Standards
 
 ### Formatting
+
 - **Line width**: 80 characters
 - **Indentation**: 4 spaces (no tabs)
 - **Line endings**: Unix (LF)
@@ -12,6 +13,7 @@
 ## TypeScript/JavaScript (Biome)
 
 ### Style Rules
+
 - **Quotes**: Single quotes for strings
 - **JSX quotes**: Single quotes
 - **Semicolons**: Required (ASI not relied upon)
@@ -21,12 +23,14 @@
 - **Bracket same line**: False (closing bracket on new line)
 
 ### Linting Rules
+
 - **Import extensions**: Required (`.js`, `.ts` extensions mandatory)
 - **Unused variables**: Error
 - **Unused imports**: Error
 - **Recommended rules**: Enabled (Biome defaults)
 
 ### File Exclusions
+
 - Test files: `**/*.test.js` (excluded by default)
 - Special test: `**/special.test.js` (explicitly included)
 - Build outputs: `dist/`, `build/`, `.next/`
@@ -35,7 +39,9 @@
 ## Python (Ruff + Pyright)
 
 ### Ruff Linting Rules
+
 Selected rule categories:
+
 - **E**: pycodestyle errors
 - **F**: Pyflakes
 - **W**: pycodestyle warnings
@@ -50,15 +56,18 @@ Selected rule categories:
 - **N**: pep8-naming
 
 ### Per-File Ignores
+
 - `__init__.py`: F401 (unused imports allowed)
 - `tests/**`: S101 (assert statements allowed)
 
 ### Formatting
+
 - **Quote style**: Single quotes
 - **Line length**: 80 characters
 - **Magic trailing comma**: Respected
 
 ### Pyright Type Checking
+
 - **Mode**: Strict
 - **Python version**: 3.10
 - **Platform**: Linux
@@ -71,11 +80,13 @@ Selected rule categories:
 ## Rust (Clippy + rustfmt)
 
 ### Clippy Thresholds
+
 - **Max function arguments**: 5
 - **Type complexity threshold**: 250
 - **Single-char binding names**: Max 4
 
 ### rustfmt Style
+
 - **Edition**: 2024
 - **Max width**: 80 characters
 - **Tab spaces**: 4
@@ -85,11 +96,13 @@ Selected rule categories:
 - **Doc comment formatting**: Enabled
 
 ### Brace Styles
+
 - **Control flow**: Always next line
 - **Struct/enum**: Same line where clause
 - **Match arms**: Block style with indentation
 
 ### Code Layout
+
 - **Function single line**: Disabled (always multi-line)
 - **Struct literal single line**: Disabled
 - **Blank lines**: 1 (both lower and upper bound)
@@ -97,6 +110,7 @@ Selected rule categories:
 - **Empty items**: Single line allowed
 
 ### Width Constraints
+
 - **Chain width**: 80
 - **Array width**: 80
 - **Function call width**: 80
@@ -105,6 +119,7 @@ Selected rule categories:
 ## Markdown (markdownlint-cli2)
 
 ### Style Rules
+
 - **Line length**: 80 characters (code blocks included)
 - **List style**: Dash (`-`) for unordered lists
 - **List indentation**: 4 spaces
@@ -112,22 +127,40 @@ Selected rule categories:
 - **Table column style**: Compact with aligned delimiters
 
 ### Allowed HTML
+
 - **Inline elements**: `<div>`, `<span>`, `<br>`, `<kbd>`
 - **Table elements**: `<th>`, `<td>`
 
 ### List Formatting
+
 - **Multi-line unordered**: 3 spaces after marker
 - **Single-line ordered**: 3 spaces after marker
+
+## Java (Prettier)
+
+### Style Rules
+
+- **Line width**: 80 characters
+- **Indentation**: 4 spaces
+- **Trailing commas**: Not applicable
+- **Brace style**: K&R style
+
+### Formatting
+
+- Consistent with prettier-plugin-java defaults
+- Aligned with project-wide 80-char standard
 
 ## Git Standards
 
 ### Commit Messages
+
 - Use conventional commit format when applicable
 - Focus on "why" not "what"
 - Keep first line under 72 characters
 - Include co-author attribution for AI assistance
 
 ### Branch Strategy
+
 - Main branch: `main`
 - Feature branches: descriptive names
 - Pre-commit: Auto-formatting enabled
@@ -136,6 +169,7 @@ Selected rule categories:
 ## Enforcement
 
 All standards enforced via Trunk:
+
 - **Pre-commit hook**: Auto-formats staged files
 - **Pre-push hook**: Runs linting checks
 - **CI integration**: Via trunk-analytics-cli
@@ -144,6 +178,7 @@ All standards enforced via Trunk:
 ## Override Policy
 
 Projects consuming this plugin should:
+
 - Avoid overriding configs when possible
 - Document any necessary overrides
 - Propose changes upstream if rules don't fit
