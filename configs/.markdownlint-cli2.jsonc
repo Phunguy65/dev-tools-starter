@@ -29,4 +29,6 @@
             "ol_single": 3,
         },
     },
+    "ignores": ["**/node_modules", "**/dist", "**/build", "**/out", "**/.next"],
+    "gitignore": false,
 }

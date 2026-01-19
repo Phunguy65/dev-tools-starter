@@ -1,0 +1,39 @@
+{
+    "$schema": "https://golangci-lint.run/jsonschema/golangci.jsonschema.json",
+    "issues": {
+        "fix": true
+    },
+    "formatters": {
+        "settings": {
+            "golines": {
+                "max-len": 80,
+                "chain-split-dots": true,
+                "tab-len": 4,
+                "reformat-tags": true
+            }
+        },
+        "exclusions": {
+            "paths": [
+                "**/node_modules",
+                "**/build",
+                "**/.next",
+                "**/out",
+                "**/dist",
+                "**/test"
+            ]
+        }
+    },
+    "linters": {
+        "default": "all",
+        "exclusions": {
+            "paths": [
+                "**/node_modules",
+                "**/build",
+                "**/.next",
+                "**/out",
+                "**/dist",
+                "**/test"
+            ]
+        }
+    }
+}
