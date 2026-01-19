@@ -1,23 +1,23 @@
 {
-    "name": "@phunguy65/commitlint-config",
+    "name": "@pnguyen26/commitlint-config",
     "version": "1.0.0",
     "description": "Sharable commitlint configuration",
     "scripts": {},
     "keywords": [],
     "author": {
         "email": "ngocphunguyen@gmail.com",
-        "name": "Nguyễn Ngọc Phú",
+        "name": "Nguyễn Ngọc Phú"
     },
     "files": [
-        "./commitlint.config.js",
+        "./commitlint.config.js"
     ],
     "exports": {
-        ".": "./commitlint.config.js",
+        ".": "./commitlint.config.js"
     },
     "license": "MIT",
     "packageManager": "pnpm@10.28.0",
     "devDependencies": {
         "@commitlint/config-conventional": "^20.3.1",
-        "@commitlint/types": "^20.3.1",
-    },
+        "@commitlint/types": "^20.3.1"
+    }
 }
