@@ -1,4 +1,4 @@
 {
     "$schema": "https://json.schemastore.org/semantic-release",
-    "extends": ["./configs/semantic-release/.releaserc.json"]
+    "extends": ["./configs/semantic-release-config/.releaserc.json"]
 }
