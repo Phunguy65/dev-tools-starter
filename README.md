@@ -234,6 +234,38 @@ plugins:
 - Keep first line under 72 characters
 - Include co-author attribution for AI assistance
 
+### Release Process
+
+This project uses [semantic-release](https://semantic-release.gitbook.io/) for automated versioning and changelog generation based on conventional commits.
+
+**Automated Releases**:
+
+- Releases are triggered automatically on push to `main` branch via GitHub Actions
+- Version bumps are determined by commit types:
+  - `feat:` → minor version bump
+  - `fix:` → patch version bump
+  - `BREAKING CHANGE:` → major version bump
+  - `docs:`, `style:`, `refactor:` → patch version bump
+- CHANGELOG.md is automatically generated and committed
+- Git tags and GitHub releases are created automatically
+
+**Manual Release**:
+
+```bash
+pnpm run release
+```
+
+**Dry Run** (test without publishing):
+
+```bash
+pnpm run release -- --dry-run
+```
+
+**Required Permissions**:
+
+- GitHub Actions requires `contents: write` and `issues: write` permissions
+- GITHUB_TOKEN is automatically provided by GitHub Actions
+
 ## Troubleshooting
 
 ### Linter not running
