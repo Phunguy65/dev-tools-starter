@@ -5,30 +5,31 @@
         "line-length": {
             "line_length": 80,
             "code_blocks": false,
-            "tables": false,
+            "tables": false
         },
         "ul-style": {
-            "style": "dash",
+            "style": "dash"
         },
         "no-duplicate-heading": {
-            "siblings_only": true,
+            "siblings_only": true
         },
         "no-inline-html": {
             "allowed_elements": ["div", "span", "br", "kbd"],
-            "table_allowed_elements": ["th", "td"],
+            "table_allowed_elements": ["th", "td"]
         },
         "table-column-style": {
-            "style": "compact",
-            "aligned_delimiter": true,
+            "style": "aligned",
+            "aligned_delimiter": true
         },
         "ul-indent": {
-            "indent": 4,
+            "indent": 4
         },
         "list-marker-space": {
             "ul_multi": 3,
-            "ol_single": 3,
+            "ol_single": 3
         },
+        "no-emphasis-as-heading": false
     },
     "ignores": ["**/node_modules", "**/dist", "**/build", "**/out", "**/.next"],
-    "gitignore": false,
+    "gitignore": false
 }

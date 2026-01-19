@@ -22,6 +22,6 @@
         "prettier-plugin-prisma",
         "prettier-plugin-sh",
         "prettier-plugin-sql",
-        "prettier-plugin-tailwindcss",
-    ],
+        "prettier-plugin-tailwindcss"
+    ]
 }
