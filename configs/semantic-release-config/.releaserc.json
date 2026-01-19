@@ -19,6 +19,14 @@
                     {
                         "type": "style",
                         "release": "patch"
+                    },
+                    {
+                        "type": "feat",
+                        "release": "minor"
+                    },
+                    {
+                        "type": "fix",
+                        "release": "patch"
                     }
                 ]
             }
