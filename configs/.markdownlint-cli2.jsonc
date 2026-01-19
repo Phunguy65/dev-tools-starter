@@ -26,7 +26,7 @@
         },
         "list-marker-space": {
             "ul_multi": 3,
-            "ol_single": 3
+            "ul_single": 3
         },
         "no-emphasis-as-heading": false
     },

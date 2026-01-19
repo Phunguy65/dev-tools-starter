@@ -56,28 +56,24 @@ lint:
   definitions:
     - name: prettier
       files:
-        - markdown
         - java
+        - markdown
     - name: markdownlint-cli2
       commands:
-        - name: fmt
+        - name: fix
           # Custom parser type defined in the trunk cli to handle markdownlint's JSON output.
-          output: regex
+          output: rewrite
           read_output_from: stderr
-          parse_regex:
-            "(?P<path>[^:]+):(?P<line>[\\d+]+)(?::(?P<col>[\\d+]+))? (?P<code>[^ ]+)
-            (?P<message>.*)\n"
-          run: markdownlint-cli2 ${target} --fix --json
-          fix_prompt: Quick fix available
-          fix_verb: fix
+          run: markdownlint-cli2 ${target} --fix
           success_codes: [0, 1]
-          formatter: true
           batch: true
           cache_results: true
-      suggest_if: config_present
-    
+          in_place: true
+          formatter: true
+          fix_prompt: Quick fix available
+          fix_verb: fix
 
-# By sourcing this plugin, repos will enable these actions
+# By sourcing this plugin, rvepos will enable these actions
 actions:
   enabled:
     - trunk-announce

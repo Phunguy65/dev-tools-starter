@@ -7,12 +7,12 @@
         "**/dist",
         "**/build",
         "**/.next",
-        "**/test",
+        "**/test"
     ],
     "languageSettings": [
         {
             "languageId": ["*"],
-            "locale": ["vi"],
-        },
-    ],
+            "locale": ["vi"]
+        }
+    ]
 }
